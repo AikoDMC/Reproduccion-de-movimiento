@@ -1,0 +1,27 @@
+[gd_scene load_steps=5 format=3 uid="uid://c8joniqfaxodg"]
+
+[ext_resource type="Script" uid="uid://bcv8mia4wt30n" path="res://nivel_1.gd" id="1_xi31o"]
+[ext_resource type="PackedScene" uid="uid://tmsok3ts40lt" path="res://player.tscn" id="2_eciuy"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_eciuy"]
+size = Vector2(279, 150)
+
+[sub_resource type="QuadMesh" id="QuadMesh_2lask"]
+
+[node name="Nivel 1" type="RigidBody2D"]
+position = Vector2(567, 349)
+script = ExtResource("1_xi31o")
+
+[node name="Player" parent="." instance=ExtResource("2_eciuy")]
+position = Vector2(-1, -92)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(-0.5, -4)
+shape = SubResource("RectangleShape2D_eciuy")
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="StaticBody2D"]
+position = Vector2(-0.500008, -4.00001)
+scale = Vector2(279, 150)
+mesh = SubResource("QuadMesh_2lask")

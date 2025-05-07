@@ -1,0 +1,127 @@
+[gd_scene load_steps=5 format=3 uid="uid://c8joniqfaxodg"]
+
+[ext_resource type="Script" uid="uid://bcv8mia4wt30n" path="res://nivel_1.gd" id="1_xi31o"]
+[ext_resource type="PackedScene" uid="uid://tmsok3ts40lt" path="res://player.tscn" id="2_eciuy"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_eciuy"]
+size = Vector2(312.5, 42)
+
+[sub_resource type="QuadMesh" id="QuadMesh_2lask"]
+
+[node name="Nivel 1" type="RigidBody2D"]
+position = Vector2(567, 349)
+script = ExtResource("1_xi31o")
+
+[node name="Player" parent="." instance=ExtResource("2_eciuy")]
+position = Vector2(-1, -92)
+
+[node name="StaticBody2D2" type="StaticBody2D" parent="."]
+position = Vector2(-236, 200)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D2"]
+position = Vector2(-80.5, -139)
+shape = SubResource("RectangleShape2D_eciuy")
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="StaticBody2D2"]
+position = Vector2(-81, -139.25)
+scale = Vector2(315, 42.5)
+mesh = SubResource("QuadMesh_2lask")
+
+[node name="StaticBody2D3" type="StaticBody2D" parent="."]
+position = Vector2(-102, 325)
+metadata/_edit_group_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D3"]
+position = Vector2(-72.5, -53)
+shape = SubResource("RectangleShape2D_eciuy")
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="StaticBody2D3"]
+position = Vector2(-73, -53.5)
+scale = Vector2(312, 43)
+mesh = SubResource("QuadMesh_2lask")
+
+[node name="StaticBody2D4" type="StaticBody2D" parent="."]
+position = Vector2(257, 252)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D4"]
+position = Vector2(-80.5, -139)
+shape = SubResource("RectangleShape2D_eciuy")
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="StaticBody2D4"]
+position = Vector2(-81, -139.25)
+scale = Vector2(315, 42.5)
+mesh = SubResource("QuadMesh_2lask")
+
+[node name="StaticBody2D5" type="StaticBody2D" parent="."]
+position = Vector2(81, 82)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D5"]
+position = Vector2(-80.5, -139)
+shape = SubResource("RectangleShape2D_eciuy")
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="StaticBody2D5"]
+position = Vector2(-81, -139.25)
+scale = Vector2(315, 42.5)
+mesh = SubResource("QuadMesh_2lask")
+
+[node name="StaticBody2D6" type="StaticBody2D" parent="."]
+position = Vector2(-221, -50)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D6"]
+position = Vector2(-80.5, -139)
+shape = SubResource("RectangleShape2D_eciuy")
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="StaticBody2D6"]
+position = Vector2(-81, -139.25)
+scale = Vector2(315, 42.5)
+mesh = SubResource("QuadMesh_2lask")
+
+[node name="StaticBody2D7" type="StaticBody2D" parent="."]
+position = Vector2(262, -101)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D7"]
+position = Vector2(-80.5, -139)
+shape = SubResource("RectangleShape2D_eciuy")
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="StaticBody2D7"]
+position = Vector2(-81, -139.25)
+scale = Vector2(315, 42.5)
+mesh = SubResource("QuadMesh_2lask")
+
+[node name="StaticBody2D8" type="StaticBody2D" parent="."]
+position = Vector2(290, 258)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D8"]
+position = Vector2(143.25, 13)
+shape = SubResource("RectangleShape2D_eciuy")
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="StaticBody2D8"]
+position = Vector2(144, 13)
+scale = Vector2(315, 42.5)
+mesh = SubResource("QuadMesh_2lask")
+
+[node name="StaticBody2D10" type="StaticBody2D" parent="."]
+position = Vector2(-400, 410)
+metadata/_edit_group_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D10"]
+position = Vector2(-80.5, -139)
+shape = SubResource("RectangleShape2D_eciuy")
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="StaticBody2D10"]
+position = Vector2(-81, -139.25)
+scale = Vector2(315, 42.5)
+mesh = SubResource("QuadMesh_2lask")
+
+[node name="StaticBody2D9" type="StaticBody2D" parent="."]
+position = Vector2(210, 411)
+metadata/_edit_group_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D9"]
+position = Vector2(-80.5, -139)
+shape = SubResource("RectangleShape2D_eciuy")
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="StaticBody2D9"]
+position = Vector2(-81, -139.25)
+scale = Vector2(315, 42.5)
+mesh = SubResource("QuadMesh_2lask")
